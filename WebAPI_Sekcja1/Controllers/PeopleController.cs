@@ -43,5 +43,18 @@ namespace WebAPI_Sekcja1.Controllers
             var res = await this.peopleService.PostAsync(newPersonDTO);
             return Ok(res);
         }
+
+        [HttpGet("{id}/Addresses")]
+        public async Task<IActionResult> GetAddresses(int id)
+        {
+            return Ok(await peopleService.GetAddresses(id));
+        }
+
+        [HttpPost("{id}/Addresses")]
+        public async Task<IActionResult> PostAddresses(int id, [FromBody] NewAddressDTO newAddressDTO)
+        {
+            await peopleService.AddAddress(id, newAddressDTO.Street, newAddressDTO.City, newAddressDTO.PostalCode);
+            return Ok();
+        }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37027.9 d17.14
+VisualStudioVersion = 17.14.37027.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI_Sekcja1", "WebAPI_Sekcja1\WebAPI_Sekcja1.csproj", "{575F4AB1-737E-4CD0-82CB-2D683281892E}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{1A9E0C44-1551-4CE8-AA4D-2342AA3FA9D5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{60BE2578-C1AB-43FE-84E9-AB356E6458A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{328980EF-0F8E-4F30-A318-B278DF3D72E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seed", "Seed\Seed.csproj", "{F8B5E409-433D-4760-991E-69BCDE4072FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{60BE2578-C1AB-43FE-84E9-AB356E6458A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60BE2578-C1AB-43FE-84E9-AB356E6458A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60BE2578-C1AB-43FE-84E9-AB356E6458A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{328980EF-0F8E-4F30-A318-B278DF3D72E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328980EF-0F8E-4F30-A318-B278DF3D72E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328980EF-0F8E-4F30-A318-B278DF3D72E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328980EF-0F8E-4F30-A318-B278DF3D72E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8B5E409-433D-4760-991E-69BCDE4072FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B5E409-433D-4760-991E-69BCDE4072FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B5E409-433D-4760-991E-69BCDE4072FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8B5E409-433D-4760-991E-69BCDE4072FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

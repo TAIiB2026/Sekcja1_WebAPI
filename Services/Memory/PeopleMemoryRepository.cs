@@ -108,5 +108,15 @@ namespace Services.Memory
 
             return Task.FromResult(res);
         }
+
+        public Task AddAddress(int personID, string postalCode, string city, string street)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<AddressDTO>> GetAddresses(int personID)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

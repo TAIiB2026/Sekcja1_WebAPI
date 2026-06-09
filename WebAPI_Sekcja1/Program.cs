@@ -1,5 +1,8 @@
 
 using Contracts;
+using DAL;
+using Microsoft.EntityFrameworkCore;
+using Services.Database;
 using Services.Memory;
 
 namespace WebAPI_Sekcja1
@@ -17,8 +20,11 @@ namespace WebAPI_Sekcja1
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddDbContext<PeopleContext>();
+
             //builder.Services.AddTransient<IPeopleService, PeopleMemoryRepository>();
-            builder.Services.AddScoped<IPeopleService, PeopleMemoryRepository>();
+            //builder.Services.AddScoped<IPeopleService, PeopleMemoryRepository>();
+            builder.Services.AddScoped<IPeopleService, PeopleDatabaseRepository>();
             //builder.Services.AddSingleton<IPeopleService, PeopleMemoryRepository>();
 
             const string CORS_POLICY_NAME = "myCORS";

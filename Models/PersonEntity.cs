@@ -1,4 +1,6 @@
-﻿namespace Models
+﻿using System.Collections.ObjectModel;
+
+namespace Models
 {
     public class PersonEntity
     {
@@ -8,5 +10,6 @@
         public DateOnly DayOfBirth { get; set; }
         public string? Phone {  get; set; }
         public string? Email { get; set; }
+        public Collection<AddressEntity> Addresses { get; set; }
     }
 }
